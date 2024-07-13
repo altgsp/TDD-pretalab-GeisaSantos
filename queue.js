@@ -4,7 +4,9 @@ class Queue {
     this.elements = []
   }
   
-  // Implementar aqui
+  size(){
+    return this.elements.length
+  }
 }
 
 module.exports = Queue
