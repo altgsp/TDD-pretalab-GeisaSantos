@@ -12,10 +12,12 @@ describe('Calculadora', () => {
   })
 
   it('Deverá retornar a multiplicação entre dois números', () => {
-    //Seu código aqui
+    const calculadora = new Calculadora()
+    expect(calculadora.multiplicacao(2,3)).toEqual(6) 
   })
 
   it('Deverá retornar a divisao entre dois números', () => {
-    //Seu código aqui
+    const calculadora = new Calculadora()
+    expect(calculadora.divisao(3,2)).toEqual(1.5)
   })
 })

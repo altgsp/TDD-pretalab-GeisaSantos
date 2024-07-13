@@ -18,14 +18,22 @@ dequeue */
   })
 
   it('Deve ser capaz de adicionar um item na fila', () => {
-   // Seu código aqui
-  })
+    const queue = new Queue();
+    queue.add(5);
+    expect(queue.size()).toEqual(1);
+    expect(queue.peek()).toEqual(5);
+  });
 
   it('Deve escolher o primeiro item da fila', () => {
-    // Seu código aqui
-  })
+    const queue = new Queue();
+    queue.add(5);
+    expect(queue.peek()).toEqual(5);
+  });
 
   it('Deve remover o primeiro item da fila', () => {
-    // Seu código aqui
+    const queue = new Queue();
+    queue.add(5);
+    queue.dequeue();
+    expect(queue.size()).toEqual(0);
   })
 })
